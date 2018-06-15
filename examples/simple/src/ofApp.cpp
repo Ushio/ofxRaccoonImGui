@@ -60,12 +60,15 @@ void ofApp::draw(){
 	ImGui::SetNextWindowBgAlpha(0.5f);
 
 	ImGui::Begin("settings", nullptr);
-	static char text[256] = "hello world";
-	static double param = 0.5;
-	static float slider = 0.2f;
-	ImGui::InputText("text", text, sizeof(text));
-	ImGui::InputDouble("param", &param, 0.1);
-	ImGui::SliderFloat("slider", &slider, 0.0f, 1.0f);
+
+	ofxImGuiLite::Tree("tree", true, [&]() {
+		static char text[256] = "hello world";
+		static double param = 0.5;
+		static float slider = 0.2f;
+		ImGui::InputText("text", text, sizeof(text));
+		ImGui::InputDouble("param", &param, 0.1);
+		ImGui::SliderFloat("slider", &slider, 0.0f, 1.0f);
+	});
 
 	ofxImGuiLite::image(_image, 250, 250);
 

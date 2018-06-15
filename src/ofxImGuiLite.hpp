@@ -21,4 +21,15 @@ namespace ofxImGuiLite {
 	// ofDisableArbTex(); on create image is highly recommended for performance.
 	void image(const ofImage &ofimage);
 	void image(const ofImage &ofimage, float width, float height);
+
+	template <class T>
+	void Tree(const char *name, bool isOpen, T f) {
+		if (isOpen) {
+			ImGui::SetNextTreeNodeOpen(true, ImGuiSetCond_Once);
+		}
+		if (ImGui::TreeNode(name)) {
+			f();
+			ImGui::TreePop();
+		}
+	}
 }
