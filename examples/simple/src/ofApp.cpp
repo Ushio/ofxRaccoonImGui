@@ -8,6 +8,10 @@ void ofApp::setup() {
 	_camera.setNearClip(0.1f);
 	_camera.setFarClip(100.0f);
 	_camera.setDistance(5.0f);
+
+	ofDisableArbTex();
+	_image.load("job_programmer.png");
+	ofEnableArbTex();
 }
 void ofApp::exit() {
 	ofxImGuiLite::shutdown();
@@ -20,8 +24,6 @@ void ofApp::update() {
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	ofClear(0);
-
 	ofEnableDepthTest();
 
 	ofClear(0);
@@ -64,6 +66,8 @@ void ofApp::draw(){
 	ImGui::InputText("text", text, sizeof(text));
 	ImGui::InputDouble("param", &param, 0.1);
 	ImGui::SliderFloat("slider", &slider, 0.0f, 1.0f);
+
+	ofxImGuiLite::image(_image, 250, 250);
 
 	ImGui::End();
 

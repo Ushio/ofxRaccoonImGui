@@ -1,6 +1,6 @@
 ﻿#include "ofxImguiLite.hpp"
 
-#include "ofMain.h"
+
 #include <GLFW/glfw3.h>
 #include "imgui_impl_glfw_gl2.h"
 #include "imgui_impl_glfw_gl3.h"
@@ -84,6 +84,9 @@ namespace ofxImGuiLite {
 		}
 		ImGui::DestroyContext();
 	}
+
+	static std::vector<std::shared_ptr<ofTexture>> textureStorage;
+
 	void beginGui() {
 		if (ofIsGLProgrammableRenderer()) {
 			ImGui_ImplGlfwGL3_NewFrame();
@@ -99,6 +102,30 @@ namespace ofxImGuiLite {
 		}
 		else {
 			ImGui_ImplGlfwGL2_RenderDrawData(ImGui::GetDrawData());
+		}
+
+		textureStorage.clear();
+	}
+	void image(const ofImage &ofimage) {
+		image(ofimage, ofimage.getWidth(), ofimage.getHeight());
+	}
+	void image(const ofImage &ofimage, float width, float height) {
+		if (ofimage.getTexture().getTextureData().textureTarget != GL_TEXTURE_2D) {
+			bool arb = ofGetUsingArbTex();
+			ofDisableArbTex();
+
+			std::shared_ptr<ofTexture> texture = std::shared_ptr<ofTexture>(new ofTexture());
+			textureStorage.push_back(texture);
+
+			texture->loadData(ofimage.getPixels());
+			ImGui::Image((ImTextureID)texture->getTextureData().textureID, ImVec2(width, height));
+
+			if (arb) {
+				ofEnableArbTex();
+			}
+		}
+		else {
+			ImGui::Image((ImTextureID)ofimage.getTexture().getTextureData().textureID, ImVec2(width, height));
 		}
 	}
 }

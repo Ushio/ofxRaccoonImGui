@@ -23,4 +23,5 @@ public:
 	void gotMessage(ofMessage msg);
 
 	ofEasyCam _camera;
+	ofImage _image;
 };
