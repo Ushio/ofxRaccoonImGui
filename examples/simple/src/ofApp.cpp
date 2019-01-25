@@ -1,9 +1,9 @@
 ﻿#include "ofApp.h"
-#include "ofxImGuiLite.hpp"
+#include "ofxRaccoonImGui.hpp"
 
 //--------------------------------------------------------------
 void ofApp::setup() {
-	ofxImGuiLite::initialize();
+	ofxRaccoonImGui::initialize();
 
 	_camera.setNearClip(0.1f);
 	_camera.setFarClip(100.0f);
@@ -14,7 +14,7 @@ void ofApp::setup() {
 	ofEnableArbTex();
 }
 void ofApp::exit() {
-	ofxImGuiLite::shutdown();
+	ofxRaccoonImGui::shutdown();
 }
 
 //--------------------------------------------------------------
@@ -44,24 +44,24 @@ void ofApp::draw(){
 	ofDisableDepthTest();
 	ofSetColor(255);
 
-	ofxImGuiLite::ScopedImGui imgui;
+	ofxRaccoonImGui::ScopedImGui imgui;
 
 	// camera control                                          for control clicked problem
-	if (ImGui::IsWindowHovered(ImGuiHoveredFlags_AnyWindow) || (ImGui::IsAnyWindowFocused() && ImGui::IsAnyMouseDown())) {
+	if (ImGui::IsWindowHovered(ImGuiHoveredFlags_AnyWindow) || (ImGui::IsWindowFocused(ImGuiFocusedFlags_AnyWindow) && ImGui::IsAnyMouseDown())) {
 		_camera.disableMouseInput();
 	}
 	else {
 		_camera.enableMouseInput();
 	}
 
-	ImGui::SetNextWindowPos(ImVec2(20, 20), ImGuiSetCond_Appearing);
-	ImGui::SetNextWindowSize(ImVec2(300, 300), ImGuiSetCond_Appearing);
-	ImGui::SetNextWindowCollapsed(false, ImGuiSetCond_Appearing);
+	ImGui::SetNextWindowPos(ImVec2(20, 20), ImGuiCond_Appearing);
+	ImGui::SetNextWindowSize(ImVec2(300, 300), ImGuiCond_Appearing);
+	ImGui::SetNextWindowCollapsed(false, ImGuiCond_Appearing);
 	ImGui::SetNextWindowBgAlpha(0.5f);
 
 	ImGui::Begin("settings", nullptr);
 
-	ofxImGuiLite::Tree("tree", true, [&]() {
+	ofxRaccoonImGui::Tree("tree", true, [&]() {
 		static char text[256] = "hello world";
 		static double param = 0.5;
 		static float slider = 0.2f;
@@ -70,7 +70,7 @@ void ofApp::draw(){
 		ImGui::SliderFloat("slider", &slider, 0.0f, 1.0f);
 	});
 
-	ofxImGuiLite::image(_image, 250, 250);
+	ofxRaccoonImGui::image(_image, 250, 250);
 
 	ImGui::End();
 

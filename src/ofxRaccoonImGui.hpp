@@ -1,8 +1,9 @@
 ﻿#pragma once
 #include "ofMain.h"
+
 #include <imgui.h>
 
-namespace ofxImGuiLite {
+namespace ofxRaccoonImGui {
 	void initialize();
 	void shutdown();
 
@@ -25,7 +26,7 @@ namespace ofxImGuiLite {
 	template <class T>
 	void Tree(const char *name, bool isOpen, T f) {
 		if (isOpen) {
-			ImGui::SetNextTreeNodeOpen(true, ImGuiSetCond_Once);
+			ImGui::SetNextTreeNodeOpen(true, ImGuiCond_Once);
 		}
 		if (ImGui::TreeNode(name)) {
 			f();

@@ -7,29 +7,29 @@
 		<ClCompile Include="src\main.cpp">
 			<Filter>src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\main.cpp">
-			<Filter>src</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\src\ofxRaccoonImGui.cpp">
+			<Filter>addons\ofxRaccoonImGui\src</Filter>
 		</ClCompile>
-		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\examples\imgui_impl_glfw.cpp">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67\examples</Filter>
 		</ClCompile>
-		<ClCompile Include="..\..\..\..\addons\ofxImGuiLite\src\ofxImGuiLite.cpp">
-			<Filter>addons\ofxImGuiLite\src</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\examples\imgui_impl_opengl2.cpp">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67\examples</Filter>
 		</ClCompile>
-		<ClCompile Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui.cpp">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\examples\imgui_impl_opengl3.cpp">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67\examples</Filter>
 		</ClCompile>
-		<ClCompile Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui_demo.cpp">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imgui.cpp">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClCompile>
-		<ClCompile Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui_draw.cpp">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imgui_demo.cpp">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClCompile>
-		<ClCompile Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui_impl_glfw_gl2.cpp">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imgui_draw.cpp">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClCompile>
-		<ClCompile Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui_impl_glfw_gl3.cpp">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClCompile Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imgui_widgets.cpp">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClCompile>
 	</ItemGroup>
 	<ItemGroup>
@@ -39,49 +39,55 @@
 		<Filter Include="addons">
 			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxImGuiLite">
-			<UniqueIdentifier>{E9A39D7D-04B6-7C1F-7250-0B6E}</UniqueIdentifier>
+		<Filter Include="addons\ofxRaccoonImGui">
+			<UniqueIdentifier>{8C7BE738-332E-567A-77BD-DAA7}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxImGuiLite\src">
-			<UniqueIdentifier>{B728E3D0-76F8-4AF2-0FEF-3AFF}</UniqueIdentifier>
+		<Filter Include="addons\ofxRaccoonImGui\src">
+			<UniqueIdentifier>{0294604B-7B7F-20AD-A40B-44E1}</UniqueIdentifier>
 		</Filter>
-		<Filter Include="addons\ofxImGuiLite\libs">
-			<UniqueIdentifier>{C2A0792E-32B7-0D9F-28BA-B0D9}</UniqueIdentifier>
+		<Filter Include="addons\ofxRaccoonImGui\libs">
+			<UniqueIdentifier>{5BB0C228-14A0-76BB-8D3A-101D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRaccoonImGui\libs\imgui-1.67">
+			<UniqueIdentifier>{B689B4D6-ACDB-45FE-AAAE-5FDD}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRaccoonImGui\libs\imgui-1.67\examples">
+			<UniqueIdentifier>{D16ACD1C-51B8-AF85-05C2-4313}</UniqueIdentifier>
 		</Filter>
 	</ItemGroup>
 	<ItemGroup>
 		<ClInclude Include="src\ofApp.h">
 			<Filter>src</Filter>
 		</ClInclude>
-		<ClInclude Include="src\ofApp.h">
-			<Filter>src</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\src\ofxRaccoonImGui.hpp">
+			<Filter>addons\ofxRaccoonImGui\src</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\src\ofxImGuiLite.hpp">
-			<Filter>addons\ofxImGuiLite\src</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\examples\imgui_impl_glfw.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67\examples</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\imconfig.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\examples\imgui_impl_opengl2.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67\examples</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\examples\imgui_impl_opengl3.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67\examples</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui_impl_glfw_gl2.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imconfig.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui_impl_glfw_gl3.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imgui.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\imgui_internal.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imgui_internal.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\stb_rect_pack.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imstb_rectpack.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\stb_textedit.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imstb_textedit.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClInclude>
-		<ClInclude Include="..\..\..\..\addons\ofxImGuiLite\libs\stb_truetype.h">
-			<Filter>addons\ofxImGuiLite\libs</Filter>
+		<ClInclude Include="..\..\..\..\addons\ofxRaccoonImGui\libs\imgui-1.67\imstb_truetype.h">
+			<Filter>addons\ofxRaccoonImGui\libs\imgui-1.67</Filter>
 		</ClInclude>
 	</ItemGroup>
 	<ItemGroup>

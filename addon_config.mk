@@ -15,10 +15,10 @@
 # and the PG will write to the console the kind of error and in which line it is
 
 meta:
-	ADDON_NAME = ofxImGuiLite
+	ADDON_NAME = ofxRaccoonImGui
 	ADDON_DESCRIPTION = 
 	ADDON_AUTHOR = @ushiostarfish
-	ADDON_TAGS = "addon" "gui"
+	ADDON_TAGS = addon gui
 	ADDON_URL = http://github.com/yournamehere/ofxAddonTemplate
 
 common:
@@ -58,7 +58,11 @@ common:
 	
 	# when parsing the file system looking for libraries exclude this for all or
 	# a specific platform
-	# ADDON_LIBS_EXCLUDE =
+	# ADDON_LIBS_EXCLUDE +=
+
+
+
+	
 linux64:
 linux:
 win_cb:
